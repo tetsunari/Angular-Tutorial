@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   angular-tutorial:
-    container_name: angular
+    container_name: angular-tutorial
     tty: true
     init: true
     build:
@@ -12,6 +12,7 @@ services:
       - '4242:4200'
     volumes:
       - ./:/usr/src:cached
+      - node_modules:/usr/src/node_modules
 
     environment:
       - TZ=Asia/Tokyo
@@ -20,3 +21,6 @@ services:
       - NODE_ENV=development
       - TINI_SUBREAPER=true
       - NODE_OPTIONS=--max-old-space-size=8192
+
+volumes:
+  node_modules:
