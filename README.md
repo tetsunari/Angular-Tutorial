@@ -15,7 +15,7 @@
 4. （初回のみ）yarn init
 5. yarn @angular/cli
 6. cd Angular-tutorial1
-7. ng serve
+7. tini --  ng serve --host 0.0.0.0
 
 http://localhost:4242/ にアクセス (dockerfileでportを変更しているため)
 
