@@ -14,5 +14,6 @@
 3. docker-compose -f docker-compose-dev.yml exec angular-tutorial bash
 4. （初回のみ）yarn init
 5. yarn
+6. yarn add @angular-devkit/build-angular --dev
 
 http://localhost:4242/ にアクセス (dockerfileでportを変更しているため)
