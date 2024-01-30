@@ -14,6 +14,8 @@
 3. docker-compose -f docker-compose-dev.yml exec angular-tutorial bash
 4. （初回のみ）yarn init
 5. yarn @angular/cli
+6. cd Angular-tutorial1
+7. ng serve
 
 http://localhost:4242/ にアクセス (dockerfileでportを変更しているため)
 
