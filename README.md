@@ -18,4 +18,4 @@
 http://localhost:4242/ にアクセス (dockerfileでportを変更しているため)
 
 
-[tutorial-1](https://angular.jp/tutorial/first-app)https://angular.jp/tutorial/first-app
+[tutorial-1](https://angular.jp/tutorial/first-app)
