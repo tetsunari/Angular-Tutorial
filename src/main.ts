@@ -2,9 +2,17 @@
 *  Protractor support is deprecated in Angular.
 *  Protractor is used in this example for compatibility with Angular documentation tools.
 */
-import { bootstrapApplication,provideProtractorTestingSupport } from '@angular/platform-browser';
+import { bootstrapApplication, provideProtractorTestingSupport } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
+
 import { AppComponent } from './app/app.component';
+import routeConfig from './app/route';
 
 bootstrapApplication(AppComponent,
-    {providers: [provideProtractorTestingSupport()]})
-  .catch(err => console.error(err));
+  {
+    providers: [
+      provideProtractorTestingSupport(),
+      provideRouter(routeConfig),
+    ]
+  }
+).catch(err => console.error(err));
