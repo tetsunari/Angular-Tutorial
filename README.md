@@ -13,7 +13,7 @@
 2. docker-compose -f docker-compose-dev.yml up -d
 3. docker-compose -f docker-compose-dev.yml exec angular-tutorial bash
 4. （初回のみ）yarn init
-5. yarn @angular/cli
+5. yarn add @angular/cli
 6. cd Angular-tutorial1
 7. tini --  ng serve --host 0.0.0.0
 
